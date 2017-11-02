@@ -101,6 +101,8 @@ finger.h
 /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/main.cpp
 getTouch.h
 /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/getTouch.h
+finger.h
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
 writeFile.h
 /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/writeFile.h
 iostream
@@ -125,4 +127,6 @@ writeFile.h
 /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/writeFile.h
 finger.h
 /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
+map
+-
 
