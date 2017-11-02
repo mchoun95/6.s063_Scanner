@@ -1,0 +1,1 @@
+/usr/bin/c++      CMakeFiles/getTouch.dir/src/processTouch.cpp.o CMakeFiles/getTouch.dir/src/getTouch.cpp.o CMakeFiles/getTouch.dir/src/main.cpp.o CMakeFiles/getTouch.dir/src/finger.cpp.o CMakeFiles/getTouch.dir/src/writeFile.cpp.o  -o getTouch -rdynamic vecmath/libvecmath.a -lpthread 

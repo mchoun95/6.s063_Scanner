@@ -1,0 +1,6 @@
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles/edit_cache.dir
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles/rebuild_cache.dir
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles/getTouch.dir
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/vecmath/CMakeFiles/rebuild_cache.dir
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/vecmath/CMakeFiles/edit_cache.dir
+/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/vecmath/CMakeFiles/vecmath.dir
