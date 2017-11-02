@@ -25,7 +25,12 @@ public:
 private:
     int current_slot;
     input_event ev;
+    int max_fingers_seen;
+    int min_needed;
     int fd;
+    bool slot_flag;
+    bool x_flag;
+    bool y_flag;
     int release_counter;
     int finger_counter;
 };

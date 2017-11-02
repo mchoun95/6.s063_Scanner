@@ -19,3 +19,11 @@ void Finger::updateDiameter(int d){
 void Finger::updateID(int i){
     id = i;
 };
+
+Vector2f Finger::getPosition(){
+    return position;
+}
+
+int Finger::getDiameter(){
+    return diameter;
+}

@@ -1,4 +1,5 @@
 #include "getTouch.h"
+#include "finger.h"
 #include "writeFile.h"
 #include <iostream>
 #include <thread>
@@ -17,12 +18,13 @@ int main(void){
     writeFile writer;
     inputMonitor monitor;
     monitor.init();
-    monitor.update();
-    cout << "doneflag"<< monitor.done_flag <<endl;
-    if (monitor.done_flag){
-        cout<<"i'm done"<<endl;
-        writer.writePoints();
-        return(0);
-    }
+    map<int, Finger> touches = monitor.update();
+    writer.writePoints(touches);
+    // cout << "doneflag"<< monitor.done_flag <<endl;
+    // if (monitor.done_flag){
+    //     cout<<"i'm done"<<endl;
+    //     writer.writePoints();
+    //     return(0);
+    // }
 
 }

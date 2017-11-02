@@ -13,6 +13,9 @@ public:
     void updatePosition(int x, int y);
     void updateDiameter(int d);
     void updateID(int i);
+
+    Vector2f getPosition();
+    int getDiameter();
 private:
     Vector2f position;
     int diameter;
