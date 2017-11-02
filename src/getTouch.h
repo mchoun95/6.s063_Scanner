@@ -16,13 +16,18 @@ class inputMonitor{
 
 public:
     int init(void);
-    int update(void);
+    map<int, Finger> update(void);
     void processUpdate(vector<int> state_update);
+    bool done_flag;
+    map<int, Finger> fingers;
+    map<int, Finger> r_fingers; //released fingers but still need to keep track
+
 private:
     int current_slot;
     input_event ev;
     int fd;
-    map<int, Finger> fingers;
+    int release_counter;
+    int finger_counter;
 };
 
 #endif

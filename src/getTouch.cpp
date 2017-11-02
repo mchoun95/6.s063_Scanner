@@ -21,13 +21,24 @@ using namespace std;
 
 void inputMonitor::processUpdate(vector<int> state_update){
     //check if finger ID is -1, which means finger is lifted up
+    //initialize_release counter;
     if (state_update[1] == -1){
+        Finger released = fingers[release_counter];
+        r_fingers[release_counter] = released;
+
+        release_counter += 1;
+        finger_counter -=1;
         fingers.erase(current_slot);
+        if (finger_counter == 0){
+            cout << "done" << endl;
+            done_flag = true;
+        }
     }
     else{
         current_slot = state_update[0];
         if (state_update[1] > 0){
             fingers[current_slot].updateID(state_update[1]);
+            finger_counter += 1;
         }
         fingers[current_slot].updatePosition(state_update[2], state_update[3]);
         fingers[current_slot].updateDiameter(state_update[4]);
@@ -36,7 +47,11 @@ void inputMonitor::processUpdate(vector<int> state_update){
 }
 int inputMonitor::init(void)
 {
-    //initialize the fingers//
+    //initialize_variables;
+    release_counter = 0;
+    finger_counter = 0;
+    done_flag = false;
+
     char name[256] = "Unknown";
 
     if ((getuid ()) != 0) {
@@ -58,24 +73,26 @@ int inputMonitor::init(void)
     printf("device name = %s\n", name);
 }
 
-int inputMonitor::update(void){
+map<int, Finger> inputMonitor::update(void){
+
     // <slot number, tracking ID, x position, y position>
     vector<int> state_update(5);
     fill(state_update.begin(), state_update.end(), 0);
     //while loop.//
     for (;;) {
+        //break out of loop if done flag is set
+        if (done_flag){
+            cout << "done flag set" <<endl;
+            return r_fingers;
+        }
         //setup stuff
         const size_t ev_size = sizeof(struct input_event);
         ssize_t size;
         size = read(fd, &ev, ev_size); //returns the number of bytes read
-        if (size < ev_size) {
-            fprintf(stderr, "Error size when reading\n");
-            goto err;
-        }
-
-        // cout<<state_update[0]<<" "<<state_update[1]<<" "
-        //     <<state_update[2]<<" "<<state_update[3]<<endl;
-
+        // if (size < ev_size) {
+        //     fprintf(stderr, "Error size when reading\n");
+        //     goto err;
+        // }
         //check if end of a report
         if (ev.type == EVENT_TYPE_REPORT){
             //TODO update fingers and states with another function
@@ -108,9 +125,9 @@ int inputMonitor::update(void){
             }
         }
     }
-    return EXIT_SUCCESS;
-
-err:
-    close(fd);
-    return EXIT_FAILURE;
+//     return EXIT_SUCCESS;
+//
+// err:
+//     close(fd);
+//     return EXIT_FAILURE;
 }

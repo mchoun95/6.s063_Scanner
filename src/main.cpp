@@ -13,10 +13,16 @@ int main(void){
     // first.join();
     // second.join();
     // inputMonitor::init
+
     writeFile writer;
     inputMonitor monitor;
-    // monitor.init();
-    // monitor.update();
-    writer.writePoints();
+    monitor.init();
+    monitor.update();
+    cout << "doneflag"<< monitor.done_flag <<endl;
+    if (monitor.done_flag){
+        cout<<"i'm done"<<endl;
+        writer.writePoints();
+        return(0);
+    }
 
 }
