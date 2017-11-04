@@ -68,12 +68,17 @@ void inputMonitor::processUpdate(vector<int> state_update){
         finger_counter -=1;
         cout <<"finger counter"<<finger_counter <<endl;
         fingers.erase(current_slot);
-        cout<< "maxfingers" <<max_fingers_seen<<endl;
+        // cout<< "maxfingers" <<max_fingers_seen<<endl;
 
         //nothing left
+        // threshold on release counter, then you're not limited by the total number of things put down//
+        // return a pair of fingers and r_fingers, andn put everything in theh text file//
+        // process the text file?? by ordering everything based on x to y and do hierarchy there//
         if (finger_counter == 0){
             cout << "done" << endl;
+            cout << "size"<< r_fingers.size()<<endl;
             done_flag = true;
+
         }
     }
     else{

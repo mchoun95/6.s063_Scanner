@@ -4,7 +4,7 @@
 #include <vecmath.h>
 #include "writeFile.h"
 
-void writeFile::writePoints(map<int, Finger> &touches){
+void writeFile::writePoints(map<int, Finger> &touches, map<int, Finger> &r_touches){
     ofstream file;
     map<int, Finger>::iterator it;
 
