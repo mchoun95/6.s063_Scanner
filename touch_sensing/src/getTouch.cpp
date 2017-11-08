@@ -6,7 +6,7 @@
 #include <iostream>
 #include "getTouch.h"
 #include "finger.h"
-
+// #include <SDL_keyboard.h>
 
 #define EVENT_DEVICE    "/dev/input/event9"
 #define EVENT_TYPE_ABS      EV_ABS
@@ -45,12 +45,8 @@ void inputMonitor::processUpdate(vector<int> state_update){
             // cout << "gothere" <<endl;
             fingers[current_slot].updatePosition(state_update[2], state_update[3]);
             // cout <<fingers[current_slot].getPosition()[0]<< " "<<fingers[current_slot].getPosition()[1]<<endl;
-
         }
     }
-
-    // fingers[current_slot].updateDiameter(state_update[4]);
-
     else if (state_update[1] == -1){
 
         //updates_current slot so know which finger is being erased//
@@ -65,7 +61,8 @@ void inputMonitor::processUpdate(vector<int> state_update){
 
         //set counters and get clean out slot in fingers
         release_counter += 1;
-        finger_counter -=1;
+        // finger_counter -=1;
+
         cout <<"finger counter"<<finger_counter <<endl;
         fingers.erase(current_slot);
         // cout<< "maxfingers" <<max_fingers_seen<<endl;
@@ -74,11 +71,10 @@ void inputMonitor::processUpdate(vector<int> state_update){
         // threshold on release counter, then you're not limited by the total number of things put down//
         // return a pair of fingers and r_fingers, andn put everything in theh text file//
         // process the text file?? by ordering everything based on x to y and do hierarchy there//
-        if (finger_counter == 0){
+        if (finger_counter > 30){
             cout << "done" << endl;
             cout << "size"<< r_fingers.size()<<endl;
             done_flag = true;
-
         }
     }
     else{
@@ -120,7 +116,7 @@ int inputMonitor::init(void)
     printf("device name = %s\n", name);
 }
 
-map<int, Finger> inputMonitor::update(void){
+vector<map<int, Finger>> inputMonitor::update(void){
 
     // <slot number, tracking ID, x position, y position>
     vector<int> state_update(5);
@@ -130,7 +126,10 @@ map<int, Finger> inputMonitor::update(void){
         //break out of loop if done flag is set
         if (done_flag){
             cout << "done flag set" <<endl;
-            return r_fingers;
+            vector<map<int, Finger>> return_fingers;
+            return_fingers.push_back(fingers);
+            return_fingers.push_back(r_fingers);
+            return return_fingers;
         }
         //setup stuff
         const size_t ev_size = sizeof(struct input_event);

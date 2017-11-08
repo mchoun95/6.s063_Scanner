@@ -30,7 +30,6 @@ set(CPP_FILES
     ${SRC_DIR}main.cpp
     ${SRC_DIR}finger.cpp
     ${SRC_DIR}writeFile.cpp
-
     )
 
 set(CPP_HEADERS

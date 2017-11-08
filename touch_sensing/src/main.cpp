@@ -18,8 +18,9 @@ int main(void){
     writeFile writer;
     inputMonitor monitor;
     monitor.init();
-    map<int, Finger> touches = monitor.update();
-    writer.writePoints(touches);
+    vector<map<int, Finger>> all_touches = monitor.update();
+    writer.writePoints(all_touches);
+    writer.writeGnuplotPoints(all_touches);
     // cout << "doneflag"<< monitor.done_flag <<endl;
     // if (monitor.done_flag){
     //     cout<<"i'm done"<<endl;

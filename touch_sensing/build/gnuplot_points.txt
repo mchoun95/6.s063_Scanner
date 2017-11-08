@@ -1,0 +1,10 @@
+#set terminal postfile       (These commented lines would be used to )
+#set output  "d1_plot.ps"    (generate a postscript file.            )
+set title "TouchPoints"
+set xlabel "x_{axis}"
+set ylabel "y_{axis}"
+set xrange [0: 3500];
+set yrange [0: 2112];
+set pointsize 1.2
+plot "gnu_display.txt" with points pointtype 5
+pause -1 "Hit any key to continue"

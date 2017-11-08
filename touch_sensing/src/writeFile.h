@@ -8,7 +8,8 @@
 using namespace std;
 class writeFile{
 public:
-    void writePoints(map<int, Finger> &touches);
+    void writePoints(vector<map<int, Finger>> &v_touches);
+    void writeGnuplotPoints(vector<map<int, Finger>> &v_touches);
 private:
 };
 
