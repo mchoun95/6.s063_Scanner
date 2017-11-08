@@ -1,4 +1,4 @@
-# Install script for directory: /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/vecmath
+# Install script for directory: /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/vecmath
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

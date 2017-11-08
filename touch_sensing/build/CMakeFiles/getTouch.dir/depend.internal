@@ -10,8 +10,8 @@ CMakeFiles/getTouch.dir/src/finger.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.cpp
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/finger.cpp
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/finger.h
 CMakeFiles/getTouch.dir/src/getTouch.cpp.o
  ../vecmath/include/Matrix2f.h
  ../vecmath/include/Matrix3f.h
@@ -21,9 +21,9 @@ CMakeFiles/getTouch.dir/src/getTouch.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/getTouch.cpp
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/getTouch.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/finger.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/getTouch.cpp
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/getTouch.h
 CMakeFiles/getTouch.dir/src/main.cpp.o
  ../vecmath/include/Matrix2f.h
  ../vecmath/include/Matrix3f.h
@@ -33,12 +33,12 @@ CMakeFiles/getTouch.dir/src/main.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/getTouch.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/main.cpp
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/writeFile.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/finger.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/getTouch.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/main.cpp
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/writeFile.h
 CMakeFiles/getTouch.dir/src/processTouch.cpp.o
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/processTouch.cpp
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/processTouch.cpp
 CMakeFiles/getTouch.dir/src/writeFile.cpp.o
  ../vecmath/include/Matrix2f.h
  ../vecmath/include/Matrix3f.h
@@ -48,6 +48,6 @@ CMakeFiles/getTouch.dir/src/writeFile.cpp.o
  ../vecmath/include/Vector3f.h
  ../vecmath/include/Vector4f.h
  ../vecmath/include/vecmath.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/finger.h
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/writeFile.cpp
- /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/src/writeFile.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/finger.h
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/writeFile.cpp
+ /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/src/writeFile.h

@@ -6,5 +6,5 @@ CXX_FLAGS =   -std=c++11
 
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/vecmath/include 
+CXX_INCLUDES = -I/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/vecmath/include 
 

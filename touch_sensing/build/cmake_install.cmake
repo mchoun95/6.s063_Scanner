@@ -1,4 +1,4 @@
-# Install script for directory: /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner
+# Install script for directory: /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,7 +34,7 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for each subdirectory.
-  include("/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/vecmath/cmake_install.cmake")
+  include("/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/vecmath/cmake_install.cmake")
 
 endif()
 
@@ -46,5 +46,5 @@ endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
-file(WRITE "/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/${CMAKE_INSTALL_MANIFEST}"
+file(WRITE "/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/${CMAKE_INSTALL_MANIFEST}"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")

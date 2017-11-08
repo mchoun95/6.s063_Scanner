@@ -54,10 +54,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner
+CMAKE_SOURCE_DIR = /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build
+CMAKE_BINARY_DIR = /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build
 
 #=============================================================================
 # Target rules for target CMakeFiles/getTouch.dir
@@ -66,7 +66,7 @@ CMAKE_BINARY_DIR = /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/bu
 CMakeFiles/getTouch.dir/all: vecmath/CMakeFiles/vecmath.dir/all
 	$(MAKE) -f CMakeFiles/getTouch.dir/build.make CMakeFiles/getTouch.dir/depend
 	$(MAKE) -f CMakeFiles/getTouch.dir/build.make CMakeFiles/getTouch.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target getTouch"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles --progress-num=1,2,3,4,5,6 "Built target getTouch"
 .PHONY : CMakeFiles/getTouch.dir/all
 
 # Include target in all.
@@ -76,9 +76,9 @@ all: CMakeFiles/getTouch.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/getTouch.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles 14
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles 14
 	$(MAKE) -f CMakeFiles/Makefile2 CMakeFiles/getTouch.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles 0
 .PHONY : CMakeFiles/getTouch.dir/rule
 
 # Convenience name for target.
@@ -121,7 +121,7 @@ vecmath/preinstall:
 vecmath/CMakeFiles/vecmath.dir/all:
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/depend
 	$(MAKE) -f vecmath/CMakeFiles/vecmath.dir/build.make vecmath/CMakeFiles/vecmath.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target vecmath"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles --progress-num=7,8,9,10,11,12,13,14 "Built target vecmath"
 .PHONY : vecmath/CMakeFiles/vecmath.dir/all
 
 # Include target in all.
@@ -131,9 +131,9 @@ all: vecmath/CMakeFiles/vecmath.dir/all
 
 # Build rule for subdir invocation for target.
 vecmath/CMakeFiles/vecmath.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles 8
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles 8
 	$(MAKE) -f CMakeFiles/Makefile2 vecmath/CMakeFiles/vecmath.dir/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/tianye/Documents/6.s063/Final_Project/6.s063_Scanner/touch_sensing/build/CMakeFiles 0
 .PHONY : vecmath/CMakeFiles/vecmath.dir/rule
 
 # Convenience name for target.
