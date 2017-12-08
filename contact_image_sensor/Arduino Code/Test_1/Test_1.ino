@@ -30,24 +30,28 @@ void setup() {
 void loop() {
 
   //Logic for toggling through pins
+  scan();
+  registerWrite(8, HIGH);
+  registerWrite(8, HIGH);
+  registerWrite(8, HIGH);
+  registerWrite(8, HIGH);
   if(toggle%8 == 0){
-    registerWrite(1, HIGH);
+    registerWrite(0, HIGH);
   }else if(toggle%8 == 1){
-    registerWrite(2, HIGH);
+    registerWrite(1, HIGH);
   }else if(toggle%8 == 2){
-    registerWrite(3, HIGH);
+    registerWrite(2, HIGH);
   }else if(toggle%8 == 3){
-    registerWrite(4, HIGH);
+    registerWrite(3, HIGH);
   }else if(toggle%8 == 4){
-    registerWrite(5, HIGH);
+    registerWrite(4, HIGH);
   }else if(toggle%8 == 5){
-    registerWrite(6, HIGH);
+    registerWrite(5, HIGH);
   }else if(toggle%8 == 6){
-    registerWrite(7, HIGH);
+    registerWrite(6, HIGH);
   }else if(toggle%8 == 7){
-    registerWrite(8, HIGH);
+    registerWrite(7, HIGH);
   }
-  
   //read the current pin for 1 second
   int t = millis();
   while(millis()-t < 1000){
